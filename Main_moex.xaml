@@ -1,0 +1,720 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1104.66666666667,11942" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Core.Activities.TextModifications</x:String>
+      <x:String>UiPath.Activities.System.Workflow.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>BalaReva.EasyExcel.Sheets</x:String>
+      <x:String>BalaReva.EasyExcel.Base</x:String>
+      <x:String>BalaReva.EasyExcel.Utilities</x:String>
+      <x:String>BalaReva.Excel.Enums</x:String>
+      <x:String>BalaReva.Excel.Sheets</x:String>
+      <x:String>BalaReva.Excel.Base</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>BalaReva.EasyExcel</AssemblyReference>
+      <AssemblyReference>BalaReva.EasyExcel.Utilities</AssemblyReference>
+      <AssemblyReference>BalaReva.Excel</AssemblyReference>
+      <AssemblyReference>BalaReva.Excel.Base</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Workflow1" sap:VirtualizedContainerService.HintSize="1114.66666666667,11877.3333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="DataTable1" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DataTable2" />
+      <Variable x:TypeArguments="x:String" Name="datavalue_jpn" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DataTable1_replace" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DataTable2_replace" />
+      <Variable x:TypeArguments="x:String" Name="datavalue_usd" />
+      <Variable x:TypeArguments="x:Int32" Name="lines_count" />
+      <Variable x:TypeArguments="x:String" Name="string_JPY" />
+      <Variable x:TypeArguments="x:String" Name="full_string" />
+      <Variable x:TypeArguments="x:String" Name="out_string" />
+      <Variable x:TypeArguments="x:String" Name="check_sum_range" />
+      <Variable x:TypeArguments="sd:DataTable" Name="check_datatable" />
+      <Variable x:TypeArguments="x:String" Name="range_anomaly" />
+      <Variable x:TypeArguments="x:String" Name="Lcount_change" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="1072.66666666667,80.6666666666667" sap2010:WorkflowViewState.IdRef="DeleteFileX_2" Path=".\Книга1.xlsx" />
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="SingleWindow" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="1072.66666666667,2514" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="e9f062d3-cae2-4899-8180-d77680e17a93" Timeout="60" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="1038.66666666667,2296" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="996.666666666667,2201.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="variable1" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[DataTable1]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Дата' ReferenceIdx='0' Name='Дата USD/RUB'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Курс промежуточного клиринга Значение' ReferenceIdx='1' Name='Курс промежуточного клиринга Значение' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Курс промежуточного клиринга Время' ReferenceIdx='2' Name='Курс промежуточного клиринга Время' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Курс основного клиринга Значение' ReferenceIdx='3' Name='Курс USD/RUB'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Курс основного клиринга Время' ReferenceIdx='4' Name='Время USD/RUB'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Дата' attr='text' /&gt;&lt;column name='Курс промежуточного клиринга Значение' attr='text' /&gt;&lt;column name='Курс промежуточного клиринга Время' attr='text' /&gt;&lt;column name='Курс основного клиринга Значение' attr='text' /&gt;&lt;column name='Курс основного клиринга Время' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="954.666666666667,158.666666666667" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="30" ScopeIdentifier="e9f062d3-cae2-4899-8180-d77680e17a93" Version="V1">
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="806, 333, 655, 829" FriendlyName="'Дата Курс'" FullSelectorArgument="&lt;webctrl aaname='Дата Курс промежуточного клиринга Курс основного клиринга Значен*' parentid='currency-rate-container' tag='TABLE' /&gt;" Guid="9a014013-1f29-42bf-a85b-f5a65a3cce6b" InformativeScreenshot="90c899cc9ab1ef71dd0d04fa8ff20d84.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                </uix:NExtractData.Target>
+              </uix:NExtractData>
+              <ui:OutputDataTable DataTable="[DataTable1]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="954.666666666667,80.6666666666667" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[datavalue_usd]" />
+              <ui:ForEach x:TypeArguments="x:Char" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="954.666666666667,932.666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[datavalue_usd]">
+                <ui:ForEach.Body>
+                  <ActivityAction x:TypeArguments="x:Char">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Char" Name="item" />
+                    </ActivityAction.Argument>
+                    <Sequence sap:VirtualizedContainerService.HintSize="918,805.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If Condition="[item&lt;&gt;vbLf]" sap:VirtualizedContainerService.HintSize="876,710.666666666667" sap2010:WorkflowViewState.IdRef="If_2">
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="304,156.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_20">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[full_string]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[full_string &amp; item]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap:VirtualizedContainerService.HintSize="526,547.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If Condition="[Val(Str( full_string.IndexOf(&quot;-&quot;)))&lt;0]" sap:VirtualizedContainerService.HintSize="484,350.666666666667" sap2010:WorkflowViewState.IdRef="If_1">
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="304,156.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_21">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[out_string]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[out_string &amp; full_string]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                            <Assign sap:VirtualizedContainerService.HintSize="484,62" sap2010:WorkflowViewState.IdRef="Assign_22">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[full_string]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">
+                                  <Literal x:TypeArguments="x:String" Value="" />
+                                </InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEach.Body>
+              </ui:ForEach>
+              <Assign sap:VirtualizedContainerService.HintSize="954.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_23">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[datavalue_usd]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[out_string]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="954.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[datavalue_usd]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String" xml:space="preserve">[datavalue_usd.Replace(","""  , "|")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="954.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_3">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[datavalue_usd]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String" xml:space="preserve">[datavalue_usd.Replace(""","  , "|")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="954.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_4">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[datavalue_usd]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String" xml:space="preserve">[datavalue_usd.Replace(","  , ".")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="954.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[datavalue_usd]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String" xml:space="preserve">[datavalue_usd.Replace("|"  , ",")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign DisplayName="Замена в шапке" sap:VirtualizedContainerService.HintSize="954.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_8">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[datavalue_usd]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String" xml:space="preserve">[datavalue_usd.Replace("Дата USD/RUB.Курс USD/RUB.Время USD/RUB"  , "Дата USD/RUB,Курс USD/RUB,Время USD/RUB")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:GenerateDataTable ColumnSizes="{x:Null}" NewLineSeparator="{x:Null}" Positions="{x:Null}" CSVParsing="True" ColumnSeparators="," DataTable="[DataTable1_replace]" DisplayName="Generate Data Table" sap:VirtualizedContainerService.HintSize="954.666666666667,202.666666666667" sap2010:WorkflowViewState.IdRef="GenerateDataTable_1" Input="[datavalue_usd]" UseColumnHeader="True" />
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="49bac5f9195154c18320c12b1e3240ca.png" Selector="&lt;html app='chrome.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" Url="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="SingleWindow" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="1072.66666666667,2836" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="e9f062d3-cae2-4899-8180-d77680e17a93" Timeout="60" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="996.666666666667,2618" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="datavalue" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[DataTable2]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Дата' ReferenceIdx='0' Name='Дата JPY/RUB'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Курс промежуточного клиринга Значение' ReferenceIdx='1' Name='Курс промежуточного клиринга Значение' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Курс промежуточного клиринга Время' ReferenceIdx='2' Name='Курс промежуточного клиринга Время' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Курс основного клиринга Значение' ReferenceIdx='3' Name='Курс JPY/RUB'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Курс основного клиринга Время' ReferenceIdx='4' Name='Время JPY/RUB'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Дата' attr='text' /&gt;&lt;column name='Курс промежуточного клиринга Значение' attr='text' /&gt;&lt;column name='Курс промежуточного клиринга Время' attr='text' /&gt;&lt;column name='Курс основного клиринга Значение' attr='text' /&gt;&lt;column name='Курс основного клиринга Время' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="954.666666666667,158.666666666667" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="e9f062d3-cae2-4899-8180-d77680e17a93" Version="V1">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="806, 401, 655, 794" FriendlyName="'Дата Курс'" FullSelectorArgument="&lt;webctrl aaname='Дата Курс промежуточного клиринга Курс основного клиринга Значен*' parentid='currency-rate-container' tag='TABLE' /&gt;" Guid="9d69b2c0-f2fc-4abd-80d6-56dccbc0d673" InformativeScreenshot="316a0e7bfef8487a6d3774e485b56bbd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:OutputDataTable DataTable="[DataTable2]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="954.666666666667,80.6666666666667" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[datavalue_jpn]" />
+            <Assign sap:VirtualizedContainerService.HintSize="954.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_24">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[out_string]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEach x:TypeArguments="x:Char" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="954.666666666667,932.666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[datavalue_jpn]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:Char">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Char" Name="item" />
+                  </ActivityAction.Argument>
+                  <Sequence sap:VirtualizedContainerService.HintSize="918,805.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[item&lt;&gt;vbLf]" sap:VirtualizedContainerService.HintSize="876,710.666666666667" sap2010:WorkflowViewState.IdRef="If_4">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="304,156.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_25">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[full_string]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[full_string &amp; item]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="526,547.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If Condition="[Val(Str( full_string.IndexOf(&quot;-&quot;)))&lt;0]" sap:VirtualizedContainerService.HintSize="484,350.666666666667" sap2010:WorkflowViewState.IdRef="If_3">
+                            <If.Then>
+                              <Sequence sap:VirtualizedContainerService.HintSize="304,156.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_26">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[out_string]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">[out_string &amp; full_string]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                          <Assign sap:VirtualizedContainerService.HintSize="484,62" sap2010:WorkflowViewState.IdRef="Assign_27">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[full_string]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+            <Assign sap:VirtualizedContainerService.HintSize="954.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_28">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[datavalue_jpn]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[out_string]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="954.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_14">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[datavalue_jpn]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String" xml:space="preserve">[datavalue_jpn.Replace(","""  , "|")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="954.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_15">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[datavalue_jpn]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String" xml:space="preserve">[datavalue_jpn.Replace(""","  , "|")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="954.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_16">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[datavalue_jpn]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String" xml:space="preserve">[datavalue_jpn.Replace(","  , ".")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="954.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_17">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[datavalue_jpn]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String" xml:space="preserve">[datavalue_jpn.Replace("|"  , ",")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="Замена в шапке" sap:VirtualizedContainerService.HintSize="954.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_18">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[datavalue_jpn]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String" xml:space="preserve">[datavalue_jpn.Replace("Дата JPY/RUB.Курс JPY/RUB.Время JPY/RUB"  , "Дата JPY/RUB,Курс JPY/RUB,Время JPY/RUB")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:GenerateDataTable ColumnSizes="{x:Null}" NewLineSeparator="{x:Null}" Positions="{x:Null}" CSVParsing="True" ColumnSeparators="," DataTable="[DataTable2_replace]" DisplayName="Generate Data Table" sap:VirtualizedContainerService.HintSize="954.666666666667,202.666666666667" sap2010:WorkflowViewState.IdRef="GenerateDataTable_3" Input="[datavalue_jpn]" UseColumnHeader="True" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DataTable2_replace]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="954.666666666667,274.666666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence sap:VirtualizedContainerService.HintSize="304,156.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_19">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[lines_count]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[lines_count+1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="49bac5f9195154c18320c12b1e3240ca.png" Selector="&lt;html app='chrome.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" Url="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=JPY_RUB" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" AutoSave="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1072.66666666667,5884" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath=".\Книга1.xlsx">
+      <ueab:ExcelApplicationCard.Body>
+        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="738,5607.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="696,5515.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:ClearRangeX DisplayName="Clear Sheet/Range/Table" HasHeaders="False" sap:VirtualizedContainerService.HintSize="654,117.333333333333" sap2010:WorkflowViewState.IdRef="ClearRangeX_1" TargetRange="[Excel.Sheet(&quot;Лист1&quot;).Range(&quot;A1:G&quot;&amp;Trim(Str(lines_count)))]" />
+              <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Лист1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="654,162" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[DataTable1_replace]" />
+              <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Лист2&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="654,162" sap2010:WorkflowViewState.IdRef="WriteRangeX_2" IgnoreEmptySource="False" Source="[DataTable2_replace]" />
+              <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;Лист1&quot;).Range(&quot;D1:F&quot;&amp;Trim(Str(lines_count+1)))]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="654,216" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_1" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;Лист2&quot;).Range(&quot;A1:C&quot;&amp;Trim(Str(lines_count+1)))]" Transpose="False" />
+              <ueab:DeleteSheetX DisplayName="Delete Sheet" sap:VirtualizedContainerService.HintSize="654,90.6666666666667" sap2010:WorkflowViewState.IdRef="DeleteSheetX_1" Sheet="[Excel.Sheet(&quot;Лист2&quot;)]" />
+              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Лист1&quot;).Cell(&quot;G1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="654,162" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[&quot;Результат&quot;]" />
+              <ueab:FillRangeX DestinationRange="[Excel.Sheet(&quot;Лист1&quot;).Range(&quot;G2:G&quot;&amp;Trim(Str(lines_count+1)))]" DisplayName="Fill Range" sap:VirtualizedContainerService.HintSize="654,140" sap2010:WorkflowViewState.IdRef="FillRangeX_1" Value="[&quot;=B2/E2&quot;]" />
+              <uix:NClick ClickType="Single" DisplayName="Click 'G'" sap:VirtualizedContainerService.HintSize="654,158" sap2010:WorkflowViewState.IdRef="NClick_4" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="691, 316, 96, 29" FriendlyName="'G'" FullSelectorArgument="&lt;uia automationid='Grid' name='Grid' role='сетка данных' /&gt;&lt;uia name='G' role='Column Header' tableCol='7' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='Grid' name='Grid' role='сетка данных' /&gt;&lt;uia name='G' role='Column Header' automationid='' check:fulltext='G' /&gt;" Guid="93bc50be-2672-41f8-a533-f2effcf253d8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGQAAAAhCAYAAAAvdw6LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFaSURBVGhD7dgxboMwGIZh7tGpx+jE1jN4qcQdKiE2zuCdlQVxAFYWOEAntk7MvcFf/w4pVCVVJuez9UV6FCWExW9sA9m6rkI4GARM9vH1KdM0ib7TYxzHn0EAMAgYBgHDIGAYBAyDgGEQMAwCJqEgszRdKXn1Ik9vu7wyUoyzDKfn4EkiyDC6ENcAtpSi610cK4U12/dG6uX8XDTxB3Ex/Gyw/Y1ZoDPHSsMgASz2MgNcjNPjEYo6yNCZqJaje0QcZJZaN/DKRrNh3yPiIL0UiS1XKs0g143+IO/mv78DlGaQxV1Zje7SV+m9CYOE0Vj995fSnBz7sV2JMUgI29L072AzSFiXWaIDfuPGkEFCc5e/Vu9HNIzxj05qv3ccH50wSHDD4jb5ag/g6Werj03iiKGSCZIKBgHDIGAYBMyvIM/vr0I4GARMJnxBvTJdv9q29esYPcY+/pN8A4JSAycQe0HjAAAAAElFTkSuQmCC" InformativeScreenshot="d0b8024ed2c2bb2371292b10622c7fc5.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='Книга1.xlsx - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Accounting Number Format'" sap:VirtualizedContainerService.HintSize="654,158" sap2010:WorkflowViewState.IdRef="NClick_2" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="896, 174, 32, 34" ElementType="Button" FriendlyName="'Accounting Number Format'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Number' /&gt;&lt;uia cls='NetUIRibbonButton' name='Accounting Number Format' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Number' /&gt;&lt;uia cls='NetUIRibbonButton' name='Accounting Number Format' role='Button' automationid='' check:fulltext='Accounting Number Format' /&gt;" Guid="40eb78a7-0eb5-4b6b-bdce-9709bdb7254c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAmCAYAAACsyDmTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAIiSURBVFhH7ZY9SyNRFIatxR9gsa2NjbtdsBYFCxEWFEkhWFsY7ex2Cz9g1xiVJRAtRLES/ChUAtliwZhKq+DCwq5GJ674bXRM0hx5Dxy5M95kNDOKwhQPuffcd+55mJuZpCp3fUVvCV/ICV/ICV/ICV/IifcjFB77/qLoeoKSQo2NgRdF1xOUFZqYiFCxWPQU7OmJUCKR4DnAWOqGYdD0dIzB2CmPuWuhdDpN7e1tXFPrEAgGux7qGIuUNAa4Fnt4JoRxc3MTpVJbPBdk89XVFb4LoVAfJZObZJq3j/aLx+N0Z5q0sDDvjZCMVXBH+vtDVCgU6PYmx9dd/tuhk8QkZWe7LaCGNWR2trctvVRcCUkd+dPkHGWGGuhvb1VZkEHW3k9wLRSJjHN+b6CaG2a/1dP5Uifl/4QtoPY/GuAMsvZ+gusjEyH1Lhx8/cDNVVBTM/Z+gusvtSqU/dFKRzMddDDyydIcoIY1ZDC39xOeJFTusV9ZXuI8mhzP91iEdSDjWgiUetHl83nOv7pQKVSh/cFaPpaz+Cjlfv+05C5+RelksY8yX+oqF3oK4+ExzosQPsshGXs/oaSQ7i+Djo31Nc6jCY7DzO7y3cBYBTWsYVyR0HMRIfWYdLyqEB5pnYRKxY/9czmcbOFGQN45clzybtobqOF1Y6pFuwfwTAjgB9SIfabM8McHOQE1rCGju1bwVMgLfCEnfCEnfCEn3pjQFd0DisXuq5Se+VYAAAAASUVORK5CYII=" InformativeScreenshot="ab57cb88e8a7effb326b80cf7e912cae.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='Книга1.xlsx - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Select All'" sap:VirtualizedContainerService.HintSize="654,158" sap2010:WorkflowViewState.IdRef="NClick_1" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="11, 316, 40, 29" FriendlyName="'Select All'" FullSelectorArgument="&lt;uia automationid='Grid' name='Grid' role='сетка данных' /&gt;&lt;uia name='Select All' role='элемент заголовка' tableCol='0' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='Grid' name='Grid' role='сетка данных' /&gt;&lt;uia name='Select All' role='элемент заголовка' automationid='' check:fulltext='Select All' /&gt;" Guid="3e17eda4-6c15-4efd-9cfa-28422972ac52" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAhCAYAAACiGknfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADuSURBVFhH7dPdCcIwFIZhV3EZF3IcJ3AFB8gCLiAEAt4VeuNd9KuJfC1a+3OSnEIC70VLcnha2l1c/rXatvXOOdUFbgWLZozx1+bWFbgVLFoFS3e6nHvXqsHA7o+H3j214IjdBJix6sFDrGrwN6xa8C8s4n0qwGNYxHuLg/9hEe8vCp6CRXymGHgqFvG5IuA5WMRns4PnYhGfzwpegkU8Ixt4KRbxnCzgNVjEs5KD12IRz0sKlsAinpkMLIVFPDcJWBKLeLY4WBqLeH7yn066Ck7Z8FMJ3DfYWts9jaZGwfdH83n1WorQuAJ3K2Dvn3zAReHfLtS7AAAAAElFTkSuQmCC" InformativeScreenshot="8a0174f89bc9c436acb4aa33a32171fe.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='Книга1.xlsx - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NHover DisplayName="Hover 'Format'" sap:VirtualizedContainerService.HintSize="654,158" sap2010:WorkflowViewState.IdRef="NHover_1" InScope="[Excel]" ScopeIdentifier="Excel" Version="V1">
+                <uix:NHover.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="1532, 111, 64, 111" FriendlyName="'Format'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Cells' /&gt;&lt;uia cls='NetUIAnchor' name='Format' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Cells' /&gt;&lt;uia cls='NetUIAnchor' name='Format' role='Menu Item' automationid='' check:fulltext='Format' /&gt;" Guid="73182b75-117c-46fc-99b8-d90fc9020805" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAABzCAYAAAAhbKSnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAPBSURBVHhe7Zo7axRhFIbzS/wRFiLBUoONiAgGsfJS6QabeGtUtAkGlSwWEtRCMSioxC5YWEgQLLwUVhYRrG2i3TYj78CJJy9nZsJcdmayb/GQme87e75znpn5NrvJ1N8/m4n4j4QQEkJICCEhhIQQjQnZs/g5Gaz+COeqgJzIHc3VQaNCDj35njZQJ8jZWyFNEq1ZB3pkiMaEoPDlj7/CuSogZxOijcaE9BUJIUoJuX/vbi+Iai+ilJDp6f29IKq9iNJChsOlZDQa5fLyxUpy7cp8OFcG5ELOaM6D2iTEISGEhBASQkgIISGEhBASQrQiZPbE8bTAPPZeeJhMnX1bK8gZreVBbWMXMjc4n16tPA5cepo2sW/hUy0gF3JGa3lQ29iF7OSRmbnxKm3i9vvftYBcyBmt5ensHiIhhIQQEkJICCEhhIQQEyVEv5g5sJh+dXdgsZ08MrhaKDCaKwNyIWc05+nsHiIhhIQQEkJICCEhhIQQEkJMlJA+ENVeRCkh0T+ndJGo9iJKCdnNSAghIYSEEBJCSAghIYSEEBJCSAghIYSEEBJCSAghIYSEEJlC3q2tJYdnDoZE8buFQiGPHy2nx54ovutcvTyfPBguhXOeQiF9FcCgFwlxjE3It69fkls3ryfHjh5J4/ET5z83NrbFoRjMr69/SE6dnN3K7cfPnTmdHmMe58ixeGdhKzdue86Lc6xnOXn9i3ODdNyDMZ/DU0kIikYBWGD1zes0duX5s3QMzflYaxyxkBiNIwfAa60xYHkRh3OfF3MY4/UtDjVi3F6LY4z5HJ5CIYy3i2NuHNhrUZyNWeNehh/3ReKY1wJoCM36sQjcVbhj/BjyYS0/FlEohN9lfOE2719nQJS/mta4j8kbjxrIikVdmLMLhBiOi/JFVHpk8uZRnL/CWc1kjUcNRLG4GzAG+ZhHPTjmuChfRGUheXcIirXzrMazxqMGOBYbJ879oxnFgShfRCUhRXsINjoby2o8azxqgGOjdYC94/ixKF9EJSHYT7LeZfz+AZoQArAWLoqtj7dm20eiOMRk3dWgkhAAKSgCsQBXJ7oSTQnB+iYATaPZKA4Xyu4cvlieTCGTioQQEkJICCEhhIQQEkJICCEhhIQQEkJICCEhhIQQrQjBx+/oIzg+yuMjuv/edty0JoS/l7Avm8DECQFeSldkgFb3EJMCuiADtL6pQkpXZIDWhQD+a16bdEJIl5AQQkIICSEkhJAQQkIICSEkhJAQQkIICSEkhJAQQkIICSEkhJAQQkK2sZn8AxgZyC2SpL4bAAAAAElFTkSuQmCC" InformativeScreenshot="83ff3895e739d7bda700dea556418eb8.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='Книга1.xlsx - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NHover.Target>
+              </uix:NHover>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Format'" sap:VirtualizedContainerService.HintSize="654,158" sap2010:WorkflowViewState.IdRef="NClick_3" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="1532, 111, 64, 111" FriendlyName="'Format'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Cells' /&gt;&lt;uia cls='NetUIAnchor' name='Format' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Cells' /&gt;&lt;uia cls='NetUIAnchor' name='Format' role='Menu Item' automationid='' check:fulltext='Format' /&gt;" Guid="3cffc679-7b49-4a7e-ae22-498e748b4796" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAABzCAYAAAAhbKSnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAPBSURBVHhe7Zo7axRhFIbzS/wRFiLBUoONiAgGsfJS6QabeGtUtAkGlSwWEtRCMSioxC5YWEgQLLwUVhYRrG2i3TYj78CJJy9nZsJcdmayb/GQme87e75znpn5NrvJ1N8/m4n4j4QQEkJICCEhhIQQjQnZs/g5Gaz+COeqgJzIHc3VQaNCDj35njZQJ8jZWyFNEq1ZB3pkiMaEoPDlj7/CuSogZxOijcaE9BUJIUoJuX/vbi+Iai+ilJDp6f29IKq9iNJChsOlZDQa5fLyxUpy7cp8OFcG5ELOaM6D2iTEISGEhBASQkgIISGEhBASQrQiZPbE8bTAPPZeeJhMnX1bK8gZreVBbWMXMjc4n16tPA5cepo2sW/hUy0gF3JGa3lQ29iF7OSRmbnxKm3i9vvftYBcyBmt5ensHiIhhIQQEkJICCEhhIQQEyVEv5g5sJh+dXdgsZ08MrhaKDCaKwNyIWc05+nsHiIhhIQQEkJICCEhhIQQEkJMlJA+ENVeRCkh0T+ndJGo9iJKCdnNSAghIYSEEBJCSAghIYSEEBJCSAghIYSEEBJCSAghIYSEEJlC3q2tJYdnDoZE8buFQiGPHy2nx54ovutcvTyfPBguhXOeQiF9FcCgFwlxjE3It69fkls3ryfHjh5J4/ET5z83NrbFoRjMr69/SE6dnN3K7cfPnTmdHmMe58ixeGdhKzdue86Lc6xnOXn9i3ODdNyDMZ/DU0kIikYBWGD1zes0duX5s3QMzflYaxyxkBiNIwfAa60xYHkRh3OfF3MY4/UtDjVi3F6LY4z5HJ5CIYy3i2NuHNhrUZyNWeNehh/3ReKY1wJoCM36sQjcVbhj/BjyYS0/FlEohN9lfOE2719nQJS/mta4j8kbjxrIikVdmLMLhBiOi/JFVHpk8uZRnL/CWc1kjUcNRLG4GzAG+ZhHPTjmuChfRGUheXcIirXzrMazxqMGOBYbJ879oxnFgShfRCUhRXsINjoby2o8azxqgGOjdYC94/ixKF9EJSHYT7LeZfz+AZoQArAWLoqtj7dm20eiOMRk3dWgkhAAKSgCsQBXJ7oSTQnB+iYATaPZKA4Xyu4cvlieTCGTioQQEkJICCEhhIQQEkJICCEhhIQQEkJICCEhhIQQrQjBx+/oIzg+yuMjuv/edty0JoS/l7Avm8DECQFeSldkgFb3EJMCuiADtL6pQkpXZIDWhQD+a16bdEJIl5AQQkIICSEkhJAQQkIICSEkhJAQQkIICSEkhJAQQkIICSEkhJAQQkK2sZn8AxgZyC2SpL4bAAAAAElFTkSuQmCC" InformativeScreenshot="83ff3895e739d7bda700dea556418eb8.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='Книга1.xlsx - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NHover DisplayName="Hover 'AutoFit Column Width'" sap:VirtualizedContainerService.HintSize="654,158" sap2010:WorkflowViewState.IdRef="NHover_2" InScope="[Excel]" ScopeIdentifier="Excel" Version="V1">
+                <uix:NHover.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="1534, 405, 267, 44" FriendlyName="'AutoFit Column Width'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Cells' /&gt;&lt;uia cls='NetUITWMenuItemGroup' idx='2' /&gt;&lt;uia cls='NetUITWBtnMenuItem' name='AutoFit Column Width' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Cells' /&gt;&lt;uia cls='NetUITWMenuItemGroup' /&gt;&lt;uia cls='NetUITWBtnMenuItem' name='AutoFit Column Width' role='Menu Item' automationid='' check:fulltext='AutoFit Column Width' /&gt;" Guid="55230689-1deb-42c5-ae70-26060fafa6c1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQ8AAAAwCAYAAAAPdP/yAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAR+SURBVHhe7Zlrbts6EEa7lzpLMbKQ2Pswsowg2UWBZAFBkF9F0Q2pGpKy+RjKHNlWo+h8wAFuJdoczuOTnPvj8+O9Qwghi8Q3MA+EkFmJefz98xsA4CwizAMAzIgwDwAwI8I8AMCMCPMAADMizAMAzIgwDwAwI8I8AMCMCPMAADMizAMAzIgwDwAwI8I8AMCMCPMAADMizAMAzIgwDwAwI8I84CJedpvubnvo3pR7IDx1+82muz/8Uu6lLCmXohWbhy/q3eahe1Hvz8zzQx/LT5X9s6z51T1ur9Ncb4etss+2e3zV14+xNPNw8dZq/nro7quDHvpl99T/t6UWmMf3Q4Z1u3XN4ofzEnyDXPQ9zjzGBlhrWOu+dcN82a3DPAaT1nJ2NFXtPMFY7EaumYdeN8xjEfjiS0GvUrCksSZy1jwUTPsG43BPTu3+NBZnHuowe+Qs9/0DRTNXbyxTDFbZr1I3zGMJuOKFRpgytDkLMA/f/Nf/ibY886jFHN4GDtcebMzjW+EG6Vik01tIui68mhZP6vS6K3jyt4Oe7DPlGmWIG8wjbq6WfU/UzjJOS9xxTK05E05mFt6I8jOEASuuB477Zuu0N4oc9S3C5V/i0c5QGkB67oHw2SFmt0f62bG61c6Un/0rIFqheZSNoD+V2weh/gYQBiNrMt9AWvO2m4e7Vt03I6xrGSxPe9xpTO058zmX4YjyPsSZ/3RQ4vex9J+PY3Q51P+ekaDkLT5HS55ra9Kzhzz2MSW5V75PGDtTe+3mQbQ+89CGVC3m5eZRNNgR5TtCkxREn29papXWdQFL3Ona9pypT/8eP0CV63kuinW1/XPydf7fxwHNekR7uKjxaDkLuW83j6lnmhfR6sxDL7JWoFrRlOtqM5RvODFFQ2qmllHEfhPzsMWdxtSeM20gLddrw1q7nuPWDd/n8hPn3ufA50s/U7rPWM6Ue2PmccGZ5kS0MvPwhVSf8I64gW5rHt4soiG5pXmciyXBFnca03LMI853uWccr56PdJ+xnCn3MI/lUWtMRyjoqci3NY8ilpuah6UBbXGn37sg84jO6T6TxXzcr1KXdB/MQ130fag1dnY/KpJeNN8M581jrOhKLDc2j2FtzRRiLHHna1tz9v/NI6zdPbjYihy6fG27/a7f9+w+Ze8ccXU1/MH0wjPNhWg95tEyaPkAh8KfPhOaRH7iJCZUefKEPfPCu2bIB2SKeYw+8RTCefQGjfY2xF3E1Jizr2Ae/jvzn6sDwfCKWntq507WDnnsr6c10ut2jTPNhWg15uEKoDRlSu0JKQ3m2T8rbw3C0DxCci8angGtESaZR0913xpKPI48N21xazG15KzVJGrXrzJoFZMc8D2j/69fdZ/ILBzufsXglbpd5UwzIVrPmwcAXA0R5rEQjk+pgLYGYC5EmAcAmBFhHgBgRoR5AIAZEeYBAGZEmAcAmBFhHgBgRoR5AIAZEeYBAGZEmAcAmBFhHgBgRoR5AIAZEeYBAGZEmAcAmBEl5oEQQq3CPBBCk/T58d79A/XBeHRzhhvXAAAAAElFTkSuQmCC" InformativeScreenshot="78d98205220b50ba570790f2028545fb.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='Книга1.xlsx - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NHover.Target>
+              </uix:NHover>
+              <uix:NClick ClickType="Single" DisplayName="Click 'AutoFit Column Width'" sap:VirtualizedContainerService.HintSize="654,158" sap2010:WorkflowViewState.IdRef="NClick_5" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="1534, 405, 267, 44" FriendlyName="'AutoFit Column Width'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Cells' /&gt;&lt;uia cls='NetUITWMenuItemGroup' idx='2' /&gt;&lt;uia cls='NetUITWBtnMenuItem' name='AutoFit Column Width' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Cells' /&gt;&lt;uia cls='NetUITWMenuItemGroup' /&gt;&lt;uia cls='NetUITWBtnMenuItem' name='AutoFit Column Width' role='Menu Item' automationid='' check:fulltext='AutoFit Column Width' /&gt;" Guid="05885cb8-fbdd-4652-b6d6-d76a75ba2317" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQ8AAAAwCAYAAAAPdP/yAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAATSSURBVHhe7ZnLahxHFED9MZE/ZdBuINZCaK3RSqCVNvFmMCTZSxCFQVpECSGBkIAw2NrqA0LID1W6Ht1Tj1s91TWPuNWn4Ri7u3rq1r23TveM33z/3beKg4ODY9Px/Pys5vO5ms1mBuTBwcFRfLy8vKTy+PefvwEANnJ5eYk8AGA4Nzc3yAMAhvP4+Ig8AGA4yAMAqkAeAFAF8gCAKpAHAFSBPACgCuQBAFUgDwCoAnkAQBXIAwCqQB4AUAXyAIAqkAdszcPiSL2dLdVn4RpoVuri6EgdLz8K10LGlMuJy8MW9e3RuXoQrx+Y+/Mmlq9ELu71mI/qw2w3zfV5ORPmmakPn+TxfYxNHibeXM0/LdVxdqO7flmsmr8PqQXyeH3ozdosXjeL3ZzbYBtkq88x8ujbwFLDDp03L8yHxTTk0UpaylknVWk9TizDRS7JQ64b8hgFtvi6oDspWNBYlWyUh8CgeZ04zJNTul7H6OQhbmaLXstxsyEkuVqx1AhWmC9TN+QxBkzxXCPUbNqYEcjDNv/uv6KNTx65mN3bwHLXGxt5vCrMRuqKtH4LCce5V9PkSR2eNwUPfjtoiO5JxwibuEAefnOVzLsmt5Z+SuL2YyrNmWYtM/dGFK/BbbDkvKObNxonvVHEiG8RJv86HmkNqQDCdbe4e9uYzRzhvX11y60pXvuXwETlkTaC/FQu3wj5NwC3MaImsw0kNW+5PMy57LwRblzJxrKUxx3GVJ4zm3O9Oby8t3HGXx2E+G0szf1+jCaH8u8ZAULe/HWU5Dk3Jly7y2MTU5B74fM0fWsqr91hmKY8pE0qFnN7eSQN1iF8hmuSBO/+kqYWKR3nGBJ3OLY8Z+LTv8FuoMz5OBfJuNz8MfE4++9ug0Y9Ij1cxHiknLncl8ujdk2HZZLykIssFShXNOG82AzpG45P0pCS1CKS2Pcij2FxhzGV50zakEPO5zZr7nyMGdd+nsmPn3ubA5sveU3hPH05E671yWOLNR2SCcrDFlJ8whv8BtqvPKwsvE2yT3lsiiVgWNxhTOORh5/vdE4/Xjkf4Tx9OROuIY/xkWtMgyvousj7lUcSy17lMaQBh8Udfu6I5OGt09wTxdzNl6lLOA/yEAe9HnKNHV33iiQXzTbDZnn0FV2IZc/yaMfmpOAzJO54bGnO/n95uLGLcxNbkkOTr5m6WDTzbpwn7Z0OU9cBP5huuaZDMS15lGy0eAO7wq/vcU2iv+IEEso8edycceFNM8QbpEYevU88AbceuUG9uQfEncRUmLMvQR72M+Ovqy1OeEmtLbl1B2PbPDbnwxrJddvFmg7FpORhCiA0ZUjuCakbzHJxL7w1aNrm0QTXvM3TIjVClTwasvPmEOIxxLkpi1uKqSRnpZLInd/JRstIssX2jPxfv+I8niwM5npG8ELddrKmAzHBH0wBYBcgjxHRPaUc0hiAQ4E8AKAK5AEAVSAPAKgCeQBAFcgDAKpAHgBQBfIAgCqQBwBUgTwAoIpOHu/ff4M8AKCY29tbK4/T01PkAQDFXF9fW3noP56ensRBAAA+P979YMTRyWM+n6tffv5JHAwAoPnrzz/Uu3dfh/Joubq6Und3d+YHEQAAzWq16r6qtJycnKg3Z2dnwUkAgD60M37/7Vf1HywjW+xIdqnZAAAAAElFTkSuQmCC" InformativeScreenshot="78d98205220b50ba570790f2028545fb.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='Книга1.xlsx - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NHover DisplayName="Hover 'Find &amp; Select'" sap:VirtualizedContainerService.HintSize="654,158" sap2010:WorkflowViewState.IdRef="NHover_4" InScope="[Excel]" ScopeIdentifier="Excel" Version="V1">
+                <uix:NHover.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="1738, 111, 70, 111" FriendlyName="'Find &amp; Select'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUIAnchor' name='Find &amp;amp; Select' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUIAnchor' name='Find &amp;amp; Select' role='Menu Item' automationid='' check:fulltext='Find &amp;amp; Select' /&gt;" Guid="9fae21bb-4ea3-48d2-a1b8-577f13ad8339" ImageBase64="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" InformativeScreenshot="4353d8f83d9d34acbc3692e9a9a89000.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='Книга1.xlsx - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NHover.Target>
+              </uix:NHover>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Find &amp; Select'" sap:VirtualizedContainerService.HintSize="654,158" sap2010:WorkflowViewState.IdRef="NClick_7" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="1738, 111, 70, 111" FriendlyName="'Find &amp; Select'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUIAnchor' name='Find &amp;amp; Select' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUIAnchor' name='Find &amp;amp; Select' role='Menu Item' automationid='' check:fulltext='Find &amp;amp; Select' /&gt;" Guid="6676aa15-59a0-4b30-aa78-ed4893f23e35" ImageBase64="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" InformativeScreenshot="4353d8f83d9d34acbc3692e9a9a89000.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='Книга1.xlsx - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NHover DisplayName="Hover 'Go To...'" sap:VirtualizedContainerService.HintSize="654,158" sap2010:WorkflowViewState.IdRef="NHover_5" InScope="[Excel]" ScopeIdentifier="Excel" Version="V1">
+                <uix:NHover.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="1656, 312, 273, 44" FriendlyName="'Go To...'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUITWMenuItemGroup' /&gt;&lt;uia cls='NetUITWBtnMenuItem' name='Go To...' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUITWMenuItemGroup' /&gt;&lt;uia cls='NetUITWBtnMenuItem' name='Go To...' role='Menu Item' automationid='' check:fulltext='Go To...' /&gt;" Guid="a45b96c0-9fdb-443a-86fe-fde2dc0c86b4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARUAAAAwCAYAAAA/+O7TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAALsSURBVHhe7do/b9pAGIDxfJMuJR+hazcrm6VmQUwdkkxIqANLs6BITYdurlQqFIZCp6pqJRSVsKKOUFXNB7rm/IcaOBzbvKYv4jnpFwlwclnu0d0lR2+v3xgGg8EoOyaTifF933ieFyIqDAZj6zGdTtej8uf3LwAordlsEhUAcoIgICoA5AyHQ6ICQA5RASCKqAAQRVQAiCIqAEQRFQCiiAoAUUQFgCiiAkCUqqgE47l53p2bHz9nzs8B6KcqKq++zMyTd3Pz7P2MsAB7St3xh7AA+03lnQphAfaX2ovaXYTlruOZ49rTNRc37ueL6p/XnD//nzPTd3wfsM/URsVKwmIvb12fl9czFzW74B2L+ubMHJ/3lt+TMO6Yk4c5pYIFaKU6KlYSFr8vFZY4KFWEIwtRwYGoLCovhzMx9ggkFZboyPMfjh1EBQeisqjYCFTherRNWMrvUtbvRwqGKUdUtp4DUED98cde0iY7FXsUcj2TW6ndQhwir2PuUu9HAfDM1Tj9bIbMuYXmABRQHRXRoFibFra9nE3vEFKLO1zYK4s9cmuuvIfP8u56MqIiNgeggNqoiAfFynsEWSzwaAdx0rlde84qdD+zcW7BOQAFVEalkqCEshewVSQq0Q6n2qgUmgNQQF1UqgtKZPNRw/U5OxWgKFVRqToooXhxb1rEq9HZHCHuVAAXVVGx/5NSaVASycXs2mKNF3F6gccxWF30YQiK7CAyopJ/jtXf77HXwO6pO/5s938oRcQLMP1Xn5DrT7iOZ4su3KyohPLM8VhEVl8Du6fyohbA/jqoqCztAnJw/QwA2dipABBFVACIIioARBEVAKKICgBRRAWAKKICQBRRASCKqAAQtYjK5eVrogJga0EQRFGp1+tEBcDW2u12FBX7ZTQaOR8CgDw+dj+EQVlExfd983n4yfkwAGT5/u2rOT19sRyVRKvVMt1u1wwGAwDI1Ov1FkeeRKPRMEf2S/pNACjDtuT+/t78BXzxOW2gXrRHAAAAAElFTkSuQmCC" InformativeScreenshot="188f80727779c0d97bfc1f4e35d5aa2c.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='Книга1.xlsx - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NHover.Target>
+              </uix:NHover>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Go To...'" sap:VirtualizedContainerService.HintSize="654,158" sap2010:WorkflowViewState.IdRef="NClick_8" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="1656, 312, 273, 44" FriendlyName="'Go To...'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUITWMenuItemGroup' /&gt;&lt;uia cls='NetUITWBtnMenuItem' name='Go To...' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUITWMenuItemGroup' /&gt;&lt;uia cls='NetUITWBtnMenuItem' name='Go To...' role='Menu Item' automationid='' check:fulltext='Go To...' /&gt;" Guid="7108ca8f-8812-4764-a7d8-a494a0c34ed2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARUAAAAwCAYAAAA/+O7TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAKsSURBVHhe7doxbhNBGMVxTkKDcwRaOisdV6BI0nMEKwUNHRRIUVzRUaKI5AARorAR4kJDZnefcezxZtd+63yW/0/6FY43njTf08w4L379vE+EEOIKpUIIsWZRKn///AaArSmUCgALhVIBYKFQKgAsFEoFgIVCqQCwUCgVABYKpQLAQqFUAFgolAoAC4VSAWChUCoALJQQpfLpdp7efJmnH/ez4vsA4lNClMr7b7P08uM8vf48o1iAA6WEOf5QLMBhU0LdqVAswOFSwl3U7qNY7ibjdDJ6tebiuvx8X9PzUfHz/ztL08LvAYdMCVcqmYolX96W3t/eVboY5YEvDPX1WTo5v3r8M4fbSTp9WNNVWEBUSshSyVQsb6euYmkKZYjiaEOp4Ego9lJ593Vmk49ArmKpjzzPcOygVHAkFHup5BIYwofvuxTL9ruU9fuRnsXUoVR2XgMIQAl7/MmXtNqp5KNQ6ZnOttotNEU0nqS7pZ/XBTBOl7fLz7ZoXdu0BhCAErJUrIWSbRrsfDm7vENYGu5qsFeGvXaTLscP73Xd9bSUim0NIAAlXKnYCyXregRZDHi9gzid3Kw9l/W6n9m4tnENIAAlVKkMUiiV9gHO+pRKvcMZtlR6rQEEoIQpleEKpbb5qFF6n50K0JcSolSGLpRKM9ybhni1dDaXEHcqQIkSolTy/6QMWiiii9m1YW2GeHnAmzJYHfqqCPrsIFpKpfsaq3/fU6+B/VPCHH92+z+UPpoBXP7Wp1L6CrfwbN/BbSuVSpc1niqR1dfA/imhLmoBHC7lKErl0S6gg9JnAGinsFMBYKFQKgAsFEoFgIVCqQCwUCgVABYKpQLAQqFUAFgolAoAC4VSAWChUCoALBRKBYCFQqkAsFAoFQAWyqJUCCHEEUqFEGJMSv8APDmM2SvbjQwAAAAASUVORK5CYII=" InformativeScreenshot="188f80727779c0d97bfc1f4e35d5aa2c.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='Книга1.xlsx - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'J21'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="654,220" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InScope="[Excel]" ScopeIdentifier="Excel" Text="[&quot;G&quot;&amp;Trim(Str(lines_count+2)) + &quot;[k(enter)]&quot;]" Version="V1">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="23, 330, 442, 26" FriendlyName="'J21'" FullSelectorArgument="&lt;uia automationid='1027' cls='RichEdit20W' name='RichEdit Control' /&gt;" FuzzySelectorArgument="&lt;uia automationid='1027' cls='RichEdit20W' name='RichEdit Control' role='поле' check:text='J21' /&gt;" Guid="47ec682a-3f6c-47dc-9b7d-3b52fd351077" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAb4AAAAeCAYAAABT5nuzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAH0SURBVHhe7do/axphAMdxfS2dM2bN6KRLQKTtEgidBUfByRRqoTW0BRuyBMeUTF19BYW8Bncd6uQkPO1drnqNf0Iagte7zwd+y3PuX+58SpVKJUQbDodmZma52mAwCK1WK1Sr1bh10ZbhA4C8mk6nod1ur4fv8sfPZx0A7MtisQgvX70WPgCK40P/s/ABUBwXl1fCB0BxfLv5LnwAFIfwAVAoO8J3GxoH5fCidZs6uw5H5XIop3Z0/ufZhp2fhPLB23CWOgOAfXpU+JrHh6Fxs4pYHLZN8UvO4wkfABnyyDe+9TWPf8ft+Dp1dvdWGMfQGx8AGfMM4UtN+ADImCeGL/V2t+m58AGQMU8IX3LRZdvbXjThAyBj/i18yeWVhz6DCh8AWfPo8MX/6ZXv3e7cNuEDIGN2hG/9/7uz1uFayHZO+ADImO3hiz9nnoTmMloPXGTZNOEDIGPWwnf3KTNaOnrRksssG3f/t8mED4CM2fGp83kGAPskfAAUivABUCjCB0ChrIUPAPJM+AAolL/CNx6Pk2MAyKeLy6tV+EajUXIMAPn06cvXVfja7XaYTCbJIwDIl6hxp6dvQqlWq8Xhi9bpdMJsNkt+AgD5MJ/PQ7/fj1tXevf+4zJ80er1euh2u2E4HJqZmf336/V6odFoJJ2rhF/gKAB/+VgvfQAAAABJRU5ErkJggg==" InformativeScreenshot="eb8945af2b8f3646a5cdd56594a501bc.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='bosa_sdm_XL9' title='Go To' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NHover DisplayName="Hover 'Sum'" sap:VirtualizedContainerService.HintSize="654,158" sap2010:WorkflowViewState.IdRef="NHover_3" InScope="[Excel]" ScopeIdentifier="Excel" Version="V1">
+                <uix:NHover.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="1620, 111, 32, 34" ElementType="Button" FriendlyName="'Sum'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUIRibbonButton' name='Sum' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUIRibbonButton' name='Sum' role='Button' automationid='' check:fulltext='Sum' /&gt;" Guid="baf40d94-68d6-4605-988e-92e32613bb80" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAmCAYAAACsyDmTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADISURBVFhH7dZBCoNADIXhHkvcisdrexvr1vZEtgeY8gqFMgSTTBIpksUPLiR8jrPI6fVcyz+VIK4EcSWISwS6Xs4uUbPrRKBxHErfd+ao2XUi0OO+fFAIz9Q7W+F0XEHIgppvk+8v+2Y9KUkqEIpGqUEoEtUEQlGoZhCKQJlAyBtlBiFP1PFAnhh0nEsdgUFNoCgMUoMiMUgFisYgMciCcV8/rCfjvqAB8ruKtkbNrhOB8IUeUbPrVJd6jxLElSCuBHElaLu1vAE0kZuWzKag5gAAAABJRU5ErkJggg==" InformativeScreenshot="2e124f07476486ac23261bb68b173c08.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='Книга1.xlsx - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NHover.Target>
+              </uix:NHover>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Sum'" sap:VirtualizedContainerService.HintSize="654,158" sap2010:WorkflowViewState.IdRef="NClick_6" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="1620, 111, 32, 34" ElementType="Button" FriendlyName="'Sum'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUIRibbonButton' name='Sum' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUIRibbonButton' name='Sum' role='Button' automationid='' check:fulltext='Sum' /&gt;" Guid="cd0a8f94-651e-4ed0-96d0-b90612564153" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAmCAYAAACsyDmTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADISURBVFhH7dZBCoNADIXhHkvcisdrexvr1vZEtgeY8gqFMgSTTBIpksUPLiR8jrPI6fVcyz+VIK4EcSWISwS6Xs4uUbPrRKBxHErfd+ao2XUi0OO+fFAIz9Q7W+F0XEHIgppvk+8v+2Y9KUkqEIpGqUEoEtUEQlGoZhCKQJlAyBtlBiFP1PFAnhh0nEsdgUFNoCgMUoMiMUgFisYgMciCcV8/rCfjvqAB8ruKtkbNrhOB8IUeUbPrVJd6jxLElSCuBHElaLu1vAE0kZuWzKag5gAAAABJRU5ErkJggg==" InformativeScreenshot="2e124f07476486ac23261bb68b173c08.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='Книга1.xlsx - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NHover DisplayName="Hover 'Copy'" sap:VirtualizedContainerService.HintSize="654,158" sap2010:WorkflowViewState.IdRef="NHover_6" InScope="[Excel]" ScopeIdentifier="Excel" Version="V1">
+                <uix:NHover.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="85, 150, 32, 34" ElementType="Button" FriendlyName="'Copy'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Clipboard' /&gt;&lt;uia cls='NetUIRibbonButton' name='Copy' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Clipboard' /&gt;&lt;uia cls='NetUIRibbonButton' name='Copy' role='Button' automationid='' check:fulltext='Copy' /&gt;" Guid="1aa8b94a-4b1b-4833-b5fa-aca2079b8973" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAmCAYAAACsyDmTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEjSURBVFhH7ddNCoJQEMDxjhVuK49S6ySICI/QlzcIIeoMrvruEhEdwdqImxcTjDzL1xvqOb2Fiz+pTM6PhKja/RYLm7IXdL2crSgHwuN/VIF0aUGOU9cWhvPce36JBOp02iIIZoV5XtcoigSCxWmaKvP9oTHUT6AkSXKzJjICmoxH2rabde6+qoyAYEZXq9UgoYyBVDNwHUEUFBvodDqSUGwgOKagWEEQoFy3qUSxgeAVwy9TQMm7IDaQKnkXVDpIFULlXVAFwlhBq+VCDPq9t+A6zrCCDvvdc/lrcB1nWEGUWEHwaZT6yFS/GKMoymbgHJeV/shUTSfjbEYGUfoaRMlK0Kc/AkXBfKmgb3u9lxGQySqQrgqkqxBkQxnIliwDxeIBXT7qhWKSNBsAAAAASUVORK5CYII=" InformativeScreenshot="9e82eee4f13eea92ea6c13dd78245f7d.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='Книга1.xlsx - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NHover.Target>
+              </uix:NHover>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Copy'" sap:VirtualizedContainerService.HintSize="654,158" sap2010:WorkflowViewState.IdRef="NClick_9" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="85, 150, 32, 34" ElementType="Button" FriendlyName="'Copy'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Clipboard' /&gt;&lt;uia cls='NetUIRibbonButton' name='Copy' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Clipboard' /&gt;&lt;uia cls='NetUIRibbonButton' name='Copy' role='Button' automationid='' check:fulltext='Copy' /&gt;" Guid="af93459b-951e-4432-810f-51b7cb2473d9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAmCAYAAACsyDmTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEUSURBVFhH7ddNCoJQEMDxjhVuK4+S6yKICI+QljcIIeoMrvr2OtZG3BgTTIS+56iveRi8xZ9SRudHQlTv+UjyLmVAVAZE9T8gy+qTheFWeK1KlSDHGedBsBE2nU5YUJUgWJxlmTTXXf4c1QqUpqnwml+kBPK9Fdn5dCzduyolEMxQjUaDRihlkGwGziOoCYodFMf3Rih2ELxvgtICggBl20MSxQ6CVwy/TAFV3Iexg2QV92FsIFkILe7DDEgr6LDf5Yv5rBScxxmtoNv18l5eDM7jjFZQnbSC4NNgfWSyX4xRFH1m4BiXsT8yWWvf+8x8g+rUGlSnToKq/giIgnlWUNtE94OUQBwZEJUBURkQVcdASf4CMd0PGHTNsGwAAAAASUVORK5CYII=" InformativeScreenshot="9e82eee4f13eea92ea6c13dd78245f7d.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='Книга1.xlsx - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <ui:GetFromClipboard TimeoutMS="{x:Null}" DisplayName="Get From Clipboard" sap:VirtualizedContainerService.HintSize="654,22" sap2010:WorkflowViewState.IdRef="GetFromClipboard_1">
+                <ui:GetFromClipboard.Result>
+                  <OutArgument x:TypeArguments="x:String">[check_sum_range]</OutArgument>
+                </ui:GetFromClipboard.Result>
+              </ui:GetFromClipboard>
+              <If Condition="[check_sum_range = &quot;G2:G&quot;&amp;Trim(Str(lines_count+1))]" sap:VirtualizedContainerService.HintSize="654,318" sap2010:WorkflowViewState.IdRef="If_5">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_29">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[range_anomaly]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">В отчете нет ошибок</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_30">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[range_anomaly]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">В отчете есть ОШИБКА в диапазоне столбца G - неверный тип данных!</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </If.Else>
+              </If>
+              <ueab:SaveExcelFileX DisplayName="Save Excel File" sap:VirtualizedContainerService.HintSize="654,85.3333333333333" sap2010:WorkflowViewState.IdRef="SaveExcelFileX_1" Workbook="[Excel]" />
+              <If Condition="[lines_count = 22]" sap:VirtualizedContainerService.HintSize="654,318" sap2010:WorkflowViewState.IdRef="If_6">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_31">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[Lcount_change]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">строки</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_32">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[Lcount_change]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">строка</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelApplicationCard.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelApplicationCard>
+    <Sequence sap:VirtualizedContainerService.HintSize="1072.66666666667,310.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_37">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="pswd" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6tWzw3x7gEyDTvjk4YC0/QAAAAACAAAAAAAQZgAAAAEAACAAAADlIPnh3PstsKwf9L7BwLrKxcPSgiss+lgOus11otSAKAAAAAAOgAAAAAIAACAAAABYQrdFMKUt+yHBbM+zWd8VkPqkDBkX8xbO11fiqjFr+SAAAAC7y3y/Fr6PzNTyr6rLEaPF46HlgSoNLGhk2St2G1KenEAAAADrpRwIGyf2ZoVKz3QlDXP/EUmXzobXHMLdEAerF6jyVUkem1TABPdyJw02ysai8XBNv3AnHMAglPtEXN/xAW0c" Result="[pswd]" />
+      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="[range_anomaly &amp; &quot;. В отчете &quot;&amp;Trim(Str(lines_count)) &amp;&quot; &quot; &amp; Lcount_change]" DisplayName="Send SMTP Mail Message" Email="boulerman@yandex.ru" EnableSSL="True" From="boulerman@yandex.ru" sap:VirtualizedContainerService.HintSize="334,156.666666666667" sap2010:WorkflowViewState.IdRef="SendMail_2" IsBodyHtml="False" Name="Роман" Password="[pswd]" Port="465" SecureConnection="Auto" Server="smtp.yandex.ru" Subject="Отчет MOEX Биржа" To="boulerman@yandex.ru">
+        <ui:SendMail.Files>
+          <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+            <InArgument x:TypeArguments="x:String">.\Книга1.xlsx</InArgument>
+          </scg:List>
+        </ui:SendMail.Files>
+      </ui:SendMail>
+    </Sequence>
+  </Sequence>
+</Activity>
